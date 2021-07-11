@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap');
+
+:root {
+    --color-main:#1a202e
+}
+body {
+    background: #f9f9f9;
+}
+* {
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.sidebar {
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(to bottom, #1399d7,#1399d7,#11a3e3, #1fafed);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px ;
+    color: #fff;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    
+    margin-left: 280px;
+   
+}
+
+.main-content h1 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    font-family: 'Mulish',sans-serif;
+}
+
+
+.main-content h4 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    font-family: 'Mulish',sans-serif;
+}
+
+main {
+padding: 1.5rem;
+min-height: 80vh;
+}
+.sidebar-user {
+    text-align: center;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.sidebar-user img {
+    width: 135px;
+    height: 125px;
+    border-radius: 90%;
+  
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-user h3 {
+font-size: 1rem;
+font-weight: 400;
+}
+.sidebar-menu li a {
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a:hover {
+color:navajowhite;
+}
+.sidebar-menu li a span {
+    font-size: 1rem;
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+
+.sidebar-user span {
+    font-size: 0.8rem;
+
+}
+.sidebar-menu {
+    margin-top: 3rem;
+}
+
+.menu-head {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu ul {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu li {
+    margin-bottom: 1rem;
+}
+
+
+.brand-icons span {
+font-size: 1rem;
+margin-left: 0.5rem;
+}
+
+.sidebar-brand {
+    height:100px;
+}
+
+.brand-flex {
+    display: flex;
+    margin-left: 25%;
+}
+
+.page-header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards {
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+    margin-top: 2rem;
+}
+
+.card-single {
+    background:#FDFEFE;
+   height: 100%;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.1);
+    border-radius: 20px;
+    color: #17202A;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+card-flex {
+    display: grid;
+    grid-template-columns: 70% auto;
+    align-items: center;
+}
+
+.card-head span {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+
+.card-head img {
+    margin-bottom: 10px;
+}
+.card-flex button {
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background: #212F3C;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 10px;
+    border-radius: 60px;
+    padding: 5px 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-header small {
+    font-size: 0.7rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+}
+
+.card-flex input[type="file"] {
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    background: #212F3C;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 10px;
+    border-radius: 60px;
+
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    margin-top: 5%;
+    
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: ivory;
+    background: #007ab3;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    border-radius: 60px;
+    padding: 15px 40px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}

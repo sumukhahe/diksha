@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home:Diksha</title>
+       
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap');
+
+:root {
+    --color-main:#1a202e
+}
+body {
+    background: #f9f9f9;
+}
+* {
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.cards {
+    
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    grid-gap: 3rem;
+    margin-top: 2rem;
+}
+
+.sidebar {
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(to bottom, #1399d7,#1399d7,#11a3e3, #1fafed);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px ;
+    color: #fff;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    
+    margin-left: 280px;
+   
+}
+
+.main-content h1 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    font-family: 'Mulish',sans-serif;
+}
+
+
+main {
+padding: 1.5rem;
+min-height: 80vh;
+}
+.sidebar-user {
+    text-align: center;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.sidebar-user img {
+    width: 135px;
+    height: 125px;
+    border-radius: 90%;
+  
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-user h3 {
+font-size: 1rem;
+font-weight: 400;
+}
+.sidebar-menu li a {
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a:hover {
+color:navajowhite;
+}
+.sidebar-menu li a span {
+    font-size: 1rem;
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+
+.sidebar-user span {
+    font-size: 0.8rem;
+
+}
+.sidebar-menu {
+    margin-top: 3rem;
+}
+
+.menu-head {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu ul {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-menu li {
+    margin-bottom: 1rem;
+}
+
+
+.brand-icons span {
+font-size: 1rem;
+margin-left: 0.5rem;
+}
+
+.sidebar-brand {
+    height:100px;
+}
+
+.brand-flex {
+    display: flex;
+    margin-left: 25%;
+}
+
+.page-header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards {
+    
+    display: block;
+    margin-top: 2rem;
+}
+
+.cards input {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type="text"]
+{
+    background: FDFEFE;
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+input[type="submit"] {
+position: relative;
+border-radius: 0 25px 25px 0;
+background: FDFEFE;
+width: 150px;
+height: 50px;
+border: none;
+outline: none;
+cursor: pointer;
+background: #212F3C;
+color: #fff;
+left: -5px;
+
+}
+
+
+.card-single button {
+    
+margin-right: 5px;
+border-radius: 25px ;
+background: FDFEFE;
+transform: translateX(30%);
+width: 100px;
+justify-content: center;
+align-items: center;
+height: 30px;
+text-align: center;
+float: right;
+border: none;
+outline: none;
+cursor: pointer;
+background: #212F3C;
+color: #fff;
+
+}
+ 
+.page-header small {
+    font-size: 0.7rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+div ul{
+    margin-left: 0px;
+}
+li {
+    text-align: center;
+}
+
+.card-single {
+    display: flex;
+    background:#FDFEFE;
+    margin-left: -35px;
+   height: 100%;
+   width: 30%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.1);
+    border-radius: 20px;
+    color: #17202A;
+    padding: 0.8rem 1rem;
+    text-align: center;
+}
+
+card-flex {
+    display: grid;
+    grid-template-columns: 70% auto;
+    align-items: center;
+}
+
+.card-head span {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+        </style>
+    
+    </head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <a href="dashboard.html" style="color: white;"><h1>Diksha</h1></a>
+                <div class="brand-icons">
+                    <span class="las-la-bell"></span>
+                    <span class="las-la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="photu.jpg" alt="dp" >
+            <h3>Sumukha Hegde</h3>
+            <span>sumuk911@gmail.com</span>
+        </div>
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span>Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="account.html">
+                            <span class="las la-user"></span>
+                             Account
+                        </a></li>
+                    <li><a href="dashboard.html">
+                        <span class="las la-book-reader"></span>
+                        Courses
+                    </a></li>
+
+                    <li><a href="todo.html" style="color: navajowhite;">
+                        <span class="las la-clipboard-list"></span>
+                        to-do
+                    </a></li>
+
+                    <li><a href="login.html">
+                        <span class="las la-sign-out-alt"></span>
+                        Logout
+                    </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="main-content">
+
+<main>
+   <div class="page-header">
+       <div>
+           <label for="todo"><h1>Task Manager</h1></label>
+           <small><a href="dashboard.html">Home </a>| Task Manager</small>
+       </div>
+      
+   </div>
+
+<div class="cards">
+ <form id="form">
+    <input type="text" id=todoUserInput placeholder="Write Something....." required> 
+    <input type="submit" value="NEW TASK">
+ </form>
+ </div>
+ <div>
+    
+        <ul class="list-group" id="display">
+            <li></li>
+          </ul>
+    
+</div>    
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<script>
+    $(document).ready(()=>{
+            const display = $("#display");
+            const form = $("#form");
+            const todoUserInput = $("#todoUserInput");
+            const getTodos = ()=>{
+                fetch('/getTodos',{method : "get"}).then((response)=>{
+                    return response.json();
+                }).then((data)=>{
+                    console.log(data);
+                    displayTodos(data);
+                });
+            }
+getTodos();
+
+const resetTodosInput = ()=>{
+                todoUserInput.val('');
+            }
+
+
+
+            const editTodo = (todo,todoID,editID)=>{
+                let editBtn = $(`#${editID}`);
+                editBtn.click(()=>{
+                    fetch(`/${todo._id}`,{
+                        method : "put",
+                        headers : {
+                            "Content-Type" : "application/json; charset=utf-8" 
+                        },
+                        body : JSON.stringify({todo : todoUserInput.val()})
+                    }).then((response)=>{
+                        return response.json();
+                    }).then((data)=>{
+                        if(data.ok == 1){
+                            let todoIndex = $(`#${todoID}`);
+                            todoIndex.html(data.value.todo);
+                            resetTodosInput();
+                            
+                        }
+                    });
+                });
+            }
+
+
+            const deleteTodo = (todo,listItemID,deleteID)=>{
+                let deleteBtn = $(`#${deleteID}`);
+                deleteBtn.click(()=>{
+                    fetch(`/${todo._id}`,{
+                        method: "delete"
+                    }).then((response)=>{
+                        return response.json();
+                    }).then((data)=>{
+                        if(data.ok == 1){
+                            $(`#${listItemID}`).remove();
+                            
+                        }
+                    });
+                })
+            }
+
+
+
+            const buildIDS = (todo)=>{
+                return {
+                    editID : "edit_" + todo._id,
+                    deleteID : "delete_" + todo._id,
+                    listItemID : "listItem_" + todo._id,
+                    todoID : "todo_" + todo._id
+                }
+            }
+function stke() {
+    var re = todoID.strike();
+    document.getElementById(ids.deleteID).innerHTML=re;
+}
+const buildTemplate = (todo,ids)=>{
+    return `<li class="list-group-item" id"${ids.listItemID}">
+
+    <div class="card-single" id="${ids.todoID}">${todo.todo}
+    
+      <button type="button" id="${ids.editID}">edit</button>
+        <button type="button" onclick="stke()" id="${ids.deleteID}">delete</button>
+            
+        </div>
+
+</li>`;
+}
+const displayTodos = (data)=>{
+                data.forEach((todo)=>{
+                    let ids = buildIDS(todo);
+                    display.append(buildTemplate(todo,ids));
+                    editTodo(todo,ids.todoID,ids.editID);
+                    deleteTodo(todo,ids.listItemID,ids.deleteID);
+                });
+            }
+
+            form.submit((e)=>{
+                e.preventDefault();
+                fetch('/',{
+                    method : 'post',
+                    body : JSON.stringify({todo : todoUserInput.val()}),
+                    headers : {
+                        "Content-Type" : "application/json; charset=utf-8"
+                    }
+                }).then((response)=>{
+                    return response.json();
+                }).then((data)=>{
+                    if(!data.error){
+                        if(data.result.ok == 1 && data.result.n == 1){
+                            let ids = buildIDS(data.document);
+                            display.append(buildTemplate(data.document,ids));
+                            editTodo(data.document,ids.todoID,ids.editID);
+                            deleteTodo(data.document,ids.listItemID,ids.deleteID);
+                            displayMessage(true,data.msg);
+                        }
+                    }
+                    else
+                        displayMessage(false,data.error.message);
+
+                    resetTodosInput();
+                    
+                });
+            });
+
+        });
+</script>
+
+</main>
+</body>
+</html>

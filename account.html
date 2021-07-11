@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home:Diksha</title>
+        <link rel="stylesheet" href="account.css">
+        
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"></head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <a href="dashboard.html" style="color: white;"><h1>Diksha</h1></a>
+                <div class="brand-icons">
+                    <span class="las-la-bell"></span>
+                    <span class="las-la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="photu.jpg" alt="dp" >
+            <h3>Sumukha Hegde</h3>
+            <span>sumuk911@gmail.com</span>
+        </div>
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span>Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="account.html" style="color: navajowhite;"> 
+                            <span class="las la-user"></span>
+                             Account
+                        </a></li>
+                    <li><a href="dashboard.html">
+                        <span class="las la-book-reader"></span>
+                        Courses
+                    </a></li>
+
+                    <li><a href="todo.html">
+                        <span class="las la-clipboard-list"></span>
+                        to-do
+                    </a></li>
+
+                    <li><a href="login.html">
+                        <span class="las la-sign-out-alt"></span>
+                        Logout
+                    </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="main-content">
+
+<main>
+   <div class="page-header">
+       <div>
+           <h1>Account</h1>
+           <small><a href="dashboard.html">Home </a>| account</small>
+       </div>
+      
+   </div>
+
+
+
+
+<div class="cards">
+    <div class="card-single" style="width: 50%;height: 50%;">
+        <div class="card-flex" >
+            <div class="card-info" >
+                <div class="card-head">
+                    
+                </div>
+                <img id= "output"src="photu.jpg" 
+                style="width: 100%;height: 100%;border-radius: 15px;"
+
+                alt="dp" >
+            </div>
+        
+            <a href="ai.html"><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)"></a>
+        
+        </div>
+</div>
+
+
+<div class="card-single" style="margin-left: -400px;width: 100%;" >
+        <div class="card-flex">
+            <div class="card-info">
+                <div class="card-head">
+                    <h1><span  class="las-la-user-circle"></span> UserInfo</h1>
+        <form method="" action="dashboard.html">
+<div class="inputbox">
+    
+<input type="text" name="email" value="sumuk911@gmail.com" autocomplete="off" required>
+
+</div>
+
+<div class="inputbox">
+    <input type="text" name="firstname" value="Sumukha" autocomplete="off" required>
+    </div>
+    
+<div class="inputbox">
+    
+    <input type="text" name="lastname" value="Hegde" autocomplete="off" required>
+    </div>
+    
+    <div class="inputbox">
+
+        <input type="text" name="age" value="22" autocomplete="off" required>
+        </div>
+
+
+<div class="inputbox">
+    <input type="tel" name="number" value="7975960998" autocomplete="off" required>
+    
+    </div>
+
+    <div class="inputbox">
+        <input type="password" name="password" value="12345" id="pw" autocomplete="off" required>
+        
+        </div>
+        <div class="inputbox">
+            <input type="password" name="copw" value="12345" id="cpw" autocomplete="off" required>
+            
+            </div>
+
+            
+<input type="submit" name="" value="EDIT">
+
+</form>
+                </div>
+            
+        </div>
+</div>
+
+
+
+
+
+  
+
+
+</main>
+
+<script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
+
+</body>
+</html>
