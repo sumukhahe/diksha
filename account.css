@@ -227,7 +227,7 @@ card-flex {
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-input[type="submit"] {
+input[type="button"] {
     margin-top: 5%;
     
     letter-spacing: 1px;
