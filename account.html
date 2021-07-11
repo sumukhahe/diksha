@@ -93,7 +93,7 @@
             <div class="card-info">
                 <div class="card-head">
                     <h1><span  class="las-la-user-circle"></span> UserInfo</h1>
-        <form method="" action="dashboard.html">
+        <form>
 <div class="inputbox">
     
 <input type="text" name="email" value="sumuk911@gmail.com" autocomplete="off" required>
@@ -130,7 +130,7 @@
             </div>
 
             
-<input type="submit" name="" value="EDIT">
+<button onclick="alert()" type="button">save</button> 
 
 </form>
                 </div>
@@ -153,6 +153,11 @@
         image.src = URL.createObjectURL(event.target.files[0]);
     };
     </script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function alert() {
+        swal("Saved!", "You details have been updated", "success");
+    }
+</script>
 </body>
 </html>
